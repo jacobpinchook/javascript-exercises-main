@@ -23,8 +23,15 @@ const power = function(a, b) {
   return final;
 };
 
-const factorial = function() {
-	
+const factorial = function(num) {
+  if (num === 0) return 1;
+	let arr = [];
+  let counter = 1;
+  while(counter < num) {
+    arr.push(counter);
+    counter++;
+  }
+  return multiply(arr) * num;
 };
 
 // Do not edit below this line
